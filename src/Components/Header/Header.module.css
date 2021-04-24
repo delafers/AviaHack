@@ -1,0 +1,11 @@
+.header {
+    grid-area: h ;
+    background-color: darkblue;
+}
+
+.header img {
+    width: 50px;
+}
+.ava img{
+    width: 25px;
+}

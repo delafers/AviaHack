@@ -1,0 +1,9 @@
+.scan {
+    width: 360px;
+    background-color: lightslategray;
+}
+.scan p{
+    background-color: #0094DA;
+    color: white;
+    margin: auto;
+}

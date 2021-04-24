@@ -1,0 +1,23 @@
+.content{
+    grid-area: c;
+    background-color: lightslategray;
+    padding: 15px;
+    color: white;
+    position: relative;
+    height: 100vh;
+}
+.content img {
+    width: 100px;
+}
+.content p{
+    width: 100vw;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+
+}
+.but{
+    background-color: #0094DA;
+    color: white;
+    width: 320px;
+}
