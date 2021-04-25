@@ -6,6 +6,7 @@ import HeaderContain from "./Components/Header/HeaderContain";
 import Main from "./Components/Main/Main";
 import Test from "./Components/Scan/Scan";
 import MyApp from "./Components/Document/Document";
+import Apps from "./Components/Document/DocumentConfirmed";
 
 const App = () => {
   return (

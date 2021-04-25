@@ -7,3 +7,9 @@
     background-color: lightslategray;
     padding: 5px;
 }
+.main button{
+    width: 100px;
+    height: 30px;
+    background-color: #0094DA;
+    color: white;
+}

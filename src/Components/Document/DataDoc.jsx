@@ -9,10 +9,11 @@ const LoginForm = (props) => {
     return(
         <form onSubmit={props.handleSubmit}>
             <div>
-                <Field placeholder={"email"} name={'login'} component={'input'}/>
-            </div>
-            <div>
                 <Field type={"checkbox"} name={"rememberMe"} component={'input'}/> данные введены верно
+            </div>
+            <h2>отправить документ на почту</h2>
+            <div>
+                <Field placeholder={"email"} name={'login'} component={'input'}/>
             </div>
             <div>
                 <button  className={s.but}>
@@ -34,7 +35,6 @@ const Login = (props) => {
         return <Redirect to={'/'}/>
     }
     return<div>
-        <h1>отправить документ на почту</h1>
         <LoginReduxForm onSubmit={onSubmit}/>
     </div>
 }

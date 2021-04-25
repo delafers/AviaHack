@@ -13,7 +13,7 @@ export const DocumentAPI = {
             headers: myHeaders,
             redirect: 'follow',
         };
-        return fetch('http://localhost:8000/api/document/'+id, requestOptions)
+        return fetch('http://aficionadoleague.ru/api/document/'+id, requestOptions)
     },
     confirmDocument(email, rememberMe, id){
         let myHeaders = new Headers();
@@ -27,6 +27,6 @@ export const DocumentAPI = {
             body: formdata,
             redirect: 'follow'
         };
-      return fetch('http://localhost:8000/api/document/'+ id, requestOptions)
+      return fetch('http://aficionadoleague.ru/api/document/'+ id+"/", requestOptions)
     }
 }

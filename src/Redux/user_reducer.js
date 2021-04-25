@@ -29,7 +29,6 @@ export const login = (email, rememberMe, id) => (dispatch) => {
             let accessDoc = JSON.parse(result)
             let id = accessDoc.id
             dispatch(setAuthUserData(id))})
-        debugger
 
 }
 

@@ -7,9 +7,12 @@ const Header = (props) => {
     return (
         <header className={s.header}>
                 <img src={logo} />
-            <a className={s.ava} href="http://localhost:8000/admin">
+            <a className={s.ava} href="http://aficionadoleague.ru/admin/">
                 <img src={ava}/>
             </a>
+            <div>
+                Вас приветствует обслуживание аэропорта
+            </div>
         </header>
     );
 }
