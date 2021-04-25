@@ -28,9 +28,9 @@ const Login = (props) => {
     const onSubmit = (formData) => {
         debugger
         console.log(formData)
-        props.login(formData.login, formData.rememberMe, 1)
+        props.login(formData.login, formData.rememberMe, props.id)
     }
-    if(props.link) {
+    if(!props.link) {
         return <Redirect to={'/'}/>
     }
     return<div>

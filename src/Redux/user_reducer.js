@@ -22,6 +22,7 @@ export const setAuthUserData = (id) => ({type: SET_USER_DATA, payload:{id}})
 
 
 export const login = (email, rememberMe, id) => (dispatch) => {
+    debugger
     DocumentAPI.confirmDocument(email, rememberMe, id)
         .then(response => response.text())
         .then(result => {

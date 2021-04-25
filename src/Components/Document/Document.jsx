@@ -9,7 +9,7 @@ import Login from "./DataDoc";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
-export default class App extends React.Component {
+class App extends React.Component {
     state = { numPages: null, pageNumber: 1 };
 
     onDocumentLoadSuccess = ({ numPages }) => {
@@ -43,7 +43,7 @@ export default class App extends React.Component {
                 </p>
                 <div>
                 </div>
-                <Login/>
+                <Login id={this.props.id}/>
             </div>
         );
     }
@@ -53,3 +53,4 @@ const mapStateToProps = (state) => ({
     link: state.documentW.link,
     id: state.documentW.id
 })
+export default connect(mapStateToProps,{})(App)
