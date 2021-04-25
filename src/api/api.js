@@ -15,12 +15,18 @@ export const DocumentAPI = {
         };
         return fetch('http://localhost:8000/api/document/'+id, requestOptions)
     },
-    confirmDocument(){
+    confirmDocument(email, rememberMe, id){
+        let myHeaders = new Headers();
+        let formdata = new FormData();
+        formdata.append("confirmed", rememberMe);
+        formdata.append("email", email);
+
         let requestOptions = {
-            method: 'POST',
-            headers: '',
-            redirect: 'follow',
+            method: 'PUT',
+            headers: myHeaders,
+            body: formdata,
+            redirect: 'follow'
         };
-      return fetch('http://localhost:8000/api/document/id', requestOptions)
+      return fetch('http://localhost:8000/api/document/'+ id, requestOptions)
     }
 }
