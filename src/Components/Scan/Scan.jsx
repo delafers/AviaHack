@@ -39,7 +39,6 @@ class Test extends React.Component {
                 </div>
             )
         }else{
-            debugger
             return <Redirect to='/docconf'/>
         }
     }

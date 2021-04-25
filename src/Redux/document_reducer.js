@@ -28,7 +28,6 @@ export const GetPDF = (id) => (dispatch) => {
         .then(response =>
             response.text())
         .then(result => {
-            debugger
             let accessDoc = JSON.parse(result)
             let link = accessDoc.document
             dispatch(setDocData(id, true, link))
